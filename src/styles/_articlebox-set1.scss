@@ -28,7 +28,7 @@ body {
       padding: 6px;
 
       p {
-        display: inline-block;
+        // set on mq below
       }
 
       button {
@@ -51,12 +51,26 @@ body {
   .articlebox1-01_img-holder {
     @include articlebox1-01--margin(auto);
   }
+
+  .articlebox1-01_extras {
+    p {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 // mobile landscape (480x320)
 @include mq($from: mobileLandscape) {
   .articlebox1-01_img-holder {
     @include articlebox1-01--margin(auto);
+  }
+
+  .articlebox1-01_extras {
+    p {
+      display: inline-block;
+      margin: auto;
+    }
   }
 }
 }

@@ -756,8 +756,6 @@ body {
 
 .articlebox1-01 .articlebox1-01_extras {
   padding: 6px; }
-  .articlebox1-01 .articlebox1-01_extras p {
-    display: inline-block; }
   .articlebox1-01 .articlebox1-01_extras button {
     float: right;
     margin-right: 6px; }
@@ -765,12 +763,18 @@ body {
 @media (min-width: 20em) {
   .articlebox1-01_img-holder {
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .articlebox1-01_extras p {
+    display: block;
+    margin-bottom: 10px; } }
 
 @media (min-width: 30em) {
   .articlebox1-01_img-holder {
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .articlebox1-01_extras p {
+    display: inline-block;
+    margin: auto; } }
 
 body:before {
   background-color: #FCF8E3;
