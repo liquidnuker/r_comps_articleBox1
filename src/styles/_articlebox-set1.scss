@@ -79,21 +79,17 @@ body {
 // ==================================================/
 @mixin articlebox1-02 {
 .articlebox1-02 {
-  p {
-    /* tb rl */
-    margin: 0px 6px;
+  article {
+    @extend %padd--4;
   }
 
   .articlebox1-02_article-title {
     position: relative;
-      > p {
-        margin: 0px;
-      }
   }
 
   .articlebox1-02_article-title,
   .articlebox1-02_extras {
-    padding: 6px;
+    @extend %padd--6;
   }
 
   .articlebox1-02_extras {
