@@ -74,3 +74,60 @@ body {
 }
 
 @include articlebox1-01;
+
+// articlebox1-02
+// ==================================================/
+@mixin articlebox1-02 {
+.articlebox1-02 {
+  p {
+    /* tb rl */
+    margin: 0px 6px;
+  }
+
+  .articlebox1-02_article-title {
+    position: relative;
+      > p {
+        margin: 0px;
+      }
+  }
+
+  .articlebox1-02_article-title,
+  .articlebox1-02_extras {
+    padding: 6px;
+  }
+
+  .articlebox1-02_extras button {
+    float: right;
+    margin-right: 6px;
+  }
+
+  .articlebox1-02_img-holder {
+    padding: 4px;
+    border: 1px solid #000;
+    max-width: 160px;
+  }
+}
+    
+// articlebox1-02 media queries (_mq.scss)
+// ==================================================/
+@mixin articlebox1-02--margin($var) {
+  margin-left: $var;
+  margin-right: $var;
+}
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .articlebox1-02_img-holder {
+    @include articlebox1-02--margin(auto);
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox1-02_img-holder {
+    @include articlebox1-02--margin(auto);
+  }
+}
+}
+
+@include articlebox1-02;
