@@ -13,31 +13,30 @@ body {
 @mixin articlebox1-01 {
   .articlebox1-01 {
     p {
-      /* tb rl */
+      // tb rl
       margin: 0px 6px;
     }
 
     .articlebox1-01_img-holder {
-      padding: 4px;
+      @extend %padd--4;
       height: 100%;
       background-color: #000;
       max-width: 160px;
     }
 
     .articlebox1-01_extras {
-      padding: 6px;
+      @extend %padd--6;
 
-      p {
-        // set on mq below
-      }
+      // p {
+      //   set on mq below
+      // }
 
       button {
         float: right;
         margin-right: 6px;
       }
     }
-  }
- 
+  } 
 
 // articlebox1-01 media queries (_mq.scss)
 // ==================================================/
@@ -54,7 +53,6 @@ body {
 
   .articlebox1-01_extras {
     p {
-      display: block;
       margin-bottom: 10px;
     }
   }

@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 ul, ol, dl, li, dt, dd {
   @extend %mp--0;
 }
+
+ul {
+  list-style-type: none;
+}
   
 form, fieldset {
   @extend %mp--0;
