@@ -756,6 +756,8 @@ body {
 
 .articlebox1-01 .articlebox1-01_extras {
   padding: 6px; }
+  .articlebox1-01 .articlebox1-01_extras p {
+    display: inline-block; }
   .articlebox1-01 .articlebox1-01_extras button {
     float: right;
     margin-right: 6px; }
