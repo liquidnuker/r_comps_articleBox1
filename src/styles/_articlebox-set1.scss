@@ -1,0 +1,60 @@
+// 
+// ==================================================/
+body {
+  @extend %system_normal--400;
+}
+
+.item-id {
+  background-color: #ccc;
+}
+
+// articlebox1-01
+// ==================================================/
+@mixin articlebox1-01 {
+  .articlebox1-01 {
+    li {
+    }
+    p {
+      /* tb rl */
+      margin: 0px 6px;
+    }
+  }
+
+  .articlebox1-01_img-holder {
+    padding: 4px;
+    background-color: #000;
+    max-width: 160px;
+  }
+
+  .articlebox1-01_extras {
+    padding: 6px;
+
+    button {
+      float: right;
+      margin-right: 6px;
+    }
+  }
+
+// articlebox1-01 media queries (_mq.scss)
+// ==================================================/
+@mixin articlebox1-01--margin($var) {
+  margin-left: $var;
+  margin-right: $var;
+}
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .articlebox1-01_img-holder {
+    @include articlebox1-01--margin(auto);
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox1-01_img-holder {
+    @include articlebox1-01--margin(auto);
+  }
+}
+}
+
+@include articlebox1-01;
