@@ -12,28 +12,28 @@ body {
 // ==================================================/
 @mixin articlebox1-01 {
   .articlebox1-01 {
-    li {
-    }
     p {
       /* tb rl */
       margin: 0px 6px;
     }
-  }
 
-  .articlebox1-01_img-holder {
-    padding: 4px;
-    background-color: #000;
-    max-width: 160px;
-  }
+    .articlebox1-01_img-holder {
+      padding: 4px;
+      height: 100%;
+      background-color: #000;
+      max-width: 160px;
+    }
 
-  .articlebox1-01_extras {
-    padding: 6px;
+    .articlebox1-01_extras {
+      padding: 6px;
 
-    button {
-      float: right;
-      margin-right: 6px;
+      button {
+        float: right;
+        margin-right: 6px;
+      }
     }
   }
+ 
 
 // articlebox1-01 media queries (_mq.scss)
 // ==================================================/
