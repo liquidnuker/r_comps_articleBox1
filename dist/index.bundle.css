@@ -805,12 +805,17 @@ body {
 @media (min-width: 20em) {
   .articlebox1-02_img-holder {
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .articlebox1-02_extras p {
+    margin-bottom: 10px; } }
 
 @media (min-width: 30em) {
   .articlebox1-02_img-holder {
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .articlebox1-02_extras p {
+    display: inline-block;
+    margin: auto; } }
 
 body:before {
   background-color: #FCF8E3;

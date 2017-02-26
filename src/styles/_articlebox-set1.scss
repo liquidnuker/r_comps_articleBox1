@@ -101,6 +101,10 @@ body {
       float: right;
       margin-right: 6px;
     }
+
+    // p {
+    //   see mq below
+    // }
   }
 
   .articlebox1-02_img-holder {
@@ -122,6 +126,13 @@ body {
   .articlebox1-02_img-holder {
     @include articlebox1-02--margin(auto);
   }
+
+  .articlebox1-02_extras {
+    p {
+      // display: block;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 // mobile landscape (480x320)
@@ -129,6 +140,14 @@ body {
   .articlebox1-02_img-holder {
     @include articlebox1-02--margin(auto);
   }
+
+  .articlebox1-02_extras {
+    p {
+      display: inline-block;
+      margin: auto;
+    }
+  }
+
 }
 }
 
