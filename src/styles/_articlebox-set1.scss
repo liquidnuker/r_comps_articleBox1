@@ -12,11 +12,10 @@ body {
 // ==================================================/
 @mixin articlebox1-01 {
   .articlebox1-01 {
-    p {
-      // tb rl
-      margin: 0px 6px;
+    article {
+      @extend %padd--4;
     }
-
+    
     .articlebox1-01_img-holder {
       @extend %padd--4;
       height: 100%;
