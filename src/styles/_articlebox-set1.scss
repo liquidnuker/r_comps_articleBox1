@@ -233,3 +233,45 @@ body {
 }
 
 @include articlebox1-03;
+
+// articlebox1-04
+// ==================================================/
+@mixin articlebox1-04 {
+/* articlebox1-04 */
+    .articlebox1-04_img-holder {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+    padding: 4px;
+    border: 1px solid #000;
+    background-color: #666;
+
+    > img {
+      height: 100%;
+      }
+    }
+    
+
+// articlebox1-04 media queries (_mq.scss)
+// ==================================================/
+@include mq($from: mobile) {
+  .articlebox1-04_img-holder {
+    float: none;
+    clear: right;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox1-04_img-holder {
+    float: left;
+    margin-right: 6px;
+  }
+}
+
+}
+
+@include articlebox1-04;
