@@ -237,12 +237,15 @@ body {
 // articlebox1-04
 // ==================================================/
 @mixin articlebox1-04 {
+.articlebox1-04 {
+  @extend %padd--4;
+  
   .articlebox1-04_img-holder {
+    @extend %padd--4;
     float: left;
     width: 60px;
     height: 60px;
     margin-right: 6px;
-    padding: 4px;
     border: 1px solid #000;
     background-color: #666;
 
@@ -269,6 +272,7 @@ body {
     float: left;
     margin-right: 6px;
   }
+}
 }
 
 }
