@@ -186,7 +186,7 @@ body {
     font-weight: bold;
   }
 
-  .articlebox1-03_title-info1 {
+  .articlebox1-03_title-info {
     border: 1px solid #000;
     padding: 2px;
     font-size: 14px;
@@ -197,6 +197,12 @@ body {
     }
   }
 }
+
+// articlebox1-03 media queries (_mq.scss)
+// ==================================================/
+
+// todo: mq of articlebox1-03_extras > p
+
 }
 
 @include articlebox1-03;
