@@ -301,11 +301,16 @@ margin-bottom: 10px;
       @extend %img--responsive;
       border: 1px solid #000;
     }
+
+    button {
+      margin-top: 4px;
+    }
   }
 
   > .articlebox1-05_extras {
+    @extend %padd--4;
+    background-color: #ccc;
     margin-top: 4px;
-    padding: 6px;
   }
 }
 
@@ -343,7 +348,7 @@ margin-bottom: 10px;
     > .articlebox1-05_img-holder {
       float: left;
       margin-right: 1%;
-      width: 30%;
+      width: 40%;
     }
   }  
 }
