@@ -12,12 +12,19 @@ body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, field
   padding: 0; }
 
 .articlebox1-01 article, .articlebox1-01 .articlebox1-01_img-holder, .articlebox1-02 article, .articlebox1-03 header,
-.articlebox1-03 article, .articlebox1-03 .articlebox1-03_extras, .articlebox1-03 .articlebox1-03_img-holder, .articlebox1-04, .articlebox1-04 .articlebox1-04_img-holder {
+.articlebox1-03 article, .articlebox1-03 .articlebox1-03_extras, .articlebox1-03 .articlebox1-03_img-holder, .articlebox1-04, .articlebox1-04 .articlebox1-04_img-holder, .articlebox1-05 .articlebox1-05_img-holder {
   padding: 4px; }
 
 .articlebox1-01 .articlebox1-01_extras, .articlebox1-02 .articlebox1-02_article-title,
 .articlebox1-02 .articlebox1-02_extras {
   padding: 6px; }
+
+.articlebox1-05 .articlebox1-05_img-holder > img {
+  display: block;
+  width: 100%;
+  /* optional */
+  max-width: 100%;
+  height: auto; }
 
 body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, fieldset, legend, input, textarea, select {
   margin: 0;
@@ -874,8 +881,8 @@ h1 {
 
 .articlebox1-05 {
   margin-bottom: 6px; }
-  .articlebox1-05 > .articlebox1-05_img-holder {
-    float: left;
+  .articlebox1-05 .articlebox1-05_img-holder {
+    border: 1px solid #000;
     margin-right: 1%;
     width: 30%;
     max-width: 256px; }
