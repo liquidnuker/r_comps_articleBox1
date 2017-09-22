@@ -30,7 +30,7 @@
 
     p {
       @extend %margin-top--4;
-      line-height: 110%; /* most browsers is about 110% to 120% */
+      line-height: 114%; /* most browsers is about 110% to 120% */
     }
   }
 
@@ -141,7 +141,7 @@
   }
 
   .articlebox102_heading2 + p {
-    line-height: 110%;
+    line-height: 114%;
   }
 
   .articlebox102_article-title {
@@ -258,6 +258,10 @@
   .articlebox103_heading1 + p {
     @extend %padd-bottom--4;
     @extend %margin-bottom--4;
+  }
+
+  .articlebox103_heading2 + p  {
+    line-height: 114%;
   }
 
   .articlebox103_img-holder {
@@ -381,16 +385,19 @@
   @extend %padd--4;
 
   .articlebox104_heading {
-    display: inline-block;
+    @extend %display--inline-block;
+    @extend %margin-bottom--4;
   }
 
   .articlebox104_heading + hr{
     border: none;
     height: 1px;
+    margin: 0;
   }
 
-  .articlebox104_heading + p {
+  .articlebox104_heading ~ p {
     @extend %padd--4;
+    line-height: 114%;
   }
 
   .articlebox104_img-holder {
@@ -434,17 +441,68 @@
 
 // articlebox105
 // ==================================================/
+@mixin articlebox105_theme() {
+  .articlebox105{
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .articlebox105_heading,
+    .articlebox105_img-holder_heading {
+      color: #fff;
+    }
+
+    .articlebox105_img-holder {
+      border: 1px solid #000;
+
+      > img {
+        border: 1px solid #000;
+      }
+    }
+
+    .articlebox105_heading + hr {
+      color: #5c5d60; /* old IE */
+      background-color: #5c5d60; /* Modern Browsers */
+    }
+
+    .articlebox105_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include articlebox105_theme();
+
 .articlebox105 {
   @extend %padd--4;
+
+  .articlebox105_heading {
+    @extend %margin-bottom--4;
+  }
+
+  .articlebox105_heading + hr {
+    border: none;
+    height: 1px;
+    margin: 0;
+  }
+
+  .articlebox105_heading ~ p {
+    line-height: 114%; /* most browsers is about 110% to 120% */
+    @extend %margin-top--4;
+  }
   
   .articlebox105_img-holder {
-  @extend %padd--4;
-  border: 1px solid #000;
-  margin-right: 1%;
+    @extend %padd--4;
+    margin-right: 1%;
     
     > img {
       @extend %img--responsive;
-      border: 1px solid #000;
+    }
+
+    .articlebox105_img-holder_heading {
+      margin: 4px 0 4px 0; /* trbl */
+    }
+
+    p {
+      line-height: 114%; /* most browsers is about 110% to 120% */
     }
 
     button {
@@ -454,8 +512,7 @@
 
   .articlebox105_extras {
     @extend %padd--4;
-    background-color: #ccc;
-    margin-top: 4px;
+    @extend %margin-top--4;  
   }
 }
 

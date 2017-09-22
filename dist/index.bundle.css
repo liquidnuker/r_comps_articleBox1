@@ -9,7 +9,7 @@
 .articlebox102 .articlebox102_article-title {
   position: relative; }
 
-.btn, .articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_extras, .articlebox103 .articlebox103_extras {
+.btn, .articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_extras, .articlebox103 .articlebox103_extras, .articlebox104 .articlebox104_heading {
   display: inline-block; }
 
 input, textarea, select, html, body, div, span, applet, object, iframe,
@@ -31,17 +31,17 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.articlebox101 article p {
+.articlebox101 article p, .articlebox105 .articlebox105_heading ~ p, .articlebox105 .articlebox105_extras {
   margin-top: 4px; }
 
-.articlebox102 .articlebox102_heading1 + p, .articlebox103 .articlebox103_heading1 + p, .articlebox103 .articlebox103_title-info {
+.articlebox102 .articlebox102_heading1 + p, .articlebox103 .articlebox103_heading1 + p, .articlebox103 .articlebox103_title-info, .articlebox104 .articlebox104_heading, .articlebox105 .articlebox105_heading {
   margin-bottom: 4px; }
 
 .articlebox103 .articlebox103_img-holder {
   margin-left: auto;
   margin-right: auto; }
 
-.btn1-01, .articlebox101, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102, .articlebox102 article, .articlebox102 .articlebox102_img-holder, .articlebox103, .articlebox103 article, .articlebox103 .articlebox103_img-holder, .articlebox103 .articlebox103_title-info, .articlebox104, .articlebox104 .articlebox104_heading + p, .articlebox104 .articlebox104_img-holder, .articlebox105, .articlebox105 .articlebox105_img-holder, .articlebox105 .articlebox105_extras {
+.btn1-01, .articlebox101, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102, .articlebox102 article, .articlebox102 .articlebox102_img-holder, .articlebox103, .articlebox103 article, .articlebox103 .articlebox103_img-holder, .articlebox103 .articlebox103_title-info, .articlebox104, .articlebox104 .articlebox104_heading ~ p, .articlebox104 .articlebox104_img-holder, .articlebox105, .articlebox105 .articlebox105_img-holder, .articlebox105 .articlebox105_extras {
   padding: 4px; }
 
 .articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_extras, .articlebox103 .articlebox103_extras {
@@ -835,7 +835,7 @@ input [type="button"],
     background-color: #343437; }
 
 .articlebox101 article p {
-  line-height: 110%;
+  line-height: 114%;
   /* most browsers is about 110% to 120% */ }
 
 .articlebox101 .articlebox101_img-holder {
@@ -878,7 +878,7 @@ input [type="button"],
     background-color: #343437; }
 
 .articlebox102 .articlebox102_heading2 + p {
-  line-height: 110%; }
+  line-height: 114%; }
 
 .articlebox102 .articlebox102_extras {
   width: 100%; }
@@ -922,6 +922,9 @@ input [type="button"],
     background-color: #1c1d22; }
   .articlebox103 .articlebox103_extras {
     background-color: #343437; }
+
+.articlebox103 .articlebox103_heading2 + p {
+  line-height: 114%; }
 
 .articlebox103 .articlebox103_img-holder {
   margin: 0 4px 0 4px;
@@ -989,12 +992,13 @@ input [type="button"],
     border: 1px solid #000;
     background-color: #666; }
 
-.articlebox104 .articlebox104_heading {
-  display: inline-block; }
-
 .articlebox104 .articlebox104_heading + hr {
   border: none;
-  height: 1px; }
+  height: 1px;
+  margin: 0; }
+
+.articlebox104 .articlebox104_heading ~ p {
+  line-height: 114%; }
 
 .articlebox104 .articlebox104_img-holder {
   float: left;
@@ -1018,17 +1022,43 @@ input [type="button"],
     float: left;
     margin-right: 6px; } }
 
-.articlebox105 .articlebox105_img-holder {
-  border: 1px solid #000;
-  margin-right: 1%; }
-  .articlebox105 .articlebox105_img-holder > img {
+.articlebox105 {
+  background-color: #2a2a2d;
+  color: #d5d5d5; }
+  .articlebox105 .articlebox105_heading,
+  .articlebox105 .articlebox105_img-holder_heading {
+    color: #fff; }
+  .articlebox105 .articlebox105_img-holder {
     border: 1px solid #000; }
+    .articlebox105 .articlebox105_img-holder > img {
+      border: 1px solid #000; }
+  .articlebox105 .articlebox105_heading + hr {
+    color: #5c5d60;
+    /* old IE */
+    background-color: #5c5d60;
+    /* Modern Browsers */ }
+  .articlebox105 .articlebox105_extras {
+    background-color: #343437; }
+
+.articlebox105 .articlebox105_heading + hr {
+  border: none;
+  height: 1px;
+  margin: 0; }
+
+.articlebox105 .articlebox105_heading ~ p {
+  line-height: 114%;
+  /* most browsers is about 110% to 120% */ }
+
+.articlebox105 .articlebox105_img-holder {
+  margin-right: 1%; }
+  .articlebox105 .articlebox105_img-holder .articlebox105_img-holder_heading {
+    margin: 4px 0 4px 0;
+    /* trbl */ }
+  .articlebox105 .articlebox105_img-holder p {
+    line-height: 114%;
+    /* most browsers is about 110% to 120% */ }
   .articlebox105 .articlebox105_img-holder button {
     margin-top: 4px; }
-
-.articlebox105 .articlebox105_extras {
-  background-color: #ccc;
-  margin-top: 4px; }
 
 @media (min-width: 20em) {
   .articlebox105 > .articlebox105_img-holder {
