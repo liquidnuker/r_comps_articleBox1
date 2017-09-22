@@ -24,6 +24,7 @@
 
 .articlebox101 {
   @extend %padd--4;
+
   article {
     @extend %padd--4;
 
@@ -101,21 +102,57 @@
 
 // articlebox102
 // ==================================================/
+@mixin articlebox102_theme() {
+  .articlebox102 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .articlebox102_heading1,
+    .articlebox102_heading2 {
+      color: #fff;
+    }
+
+    .articlebox102_heading1 + p {
+      border-bottom: 1px dashed #5c5d60;
+    }
+
+    .articlebox102_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include articlebox102_theme();
+
 .articlebox102 {
+  @extend %padd--4;
+
   article {
     @extend %padd--4;
+  }
+
+  .articlebox102_heading1,
+  .articlebox102_heading2 {
+    @extend %padd-bottom--4;
+  }
+
+  .articlebox102_heading1 + p {
+    @extend %padd-bottom--4;
+    @extend %margin-bottom--4;
+  }
+
+  .articlebox102_heading2 + p {
+    line-height: 110%;
   }
 
   .articlebox102_article-title {
     @extend %pos--relative;
   }
 
-  .articlebox102_article-title,
   .articlebox102_extras {
+    @extend %display--inline-block;
     @extend %padd--6;
-  }
+    width: 100%;
 
-  .articlebox102_extras {
     button {
       float: right;
       margin-right: 6px;

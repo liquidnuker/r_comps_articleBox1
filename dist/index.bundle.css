@@ -9,7 +9,7 @@
 .articlebox102 .articlebox102_article-title {
   position: relative; }
 
-.btn, .articlebox101 .articlebox101_extras {
+.btn, .articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_extras {
   display: inline-block; }
 
 input, textarea, select, html, body, div, span, applet, object, iframe,
@@ -34,19 +34,22 @@ input [type="button"],
 .articlebox101 article p {
   margin-top: 4px; }
 
+.articlebox102 .articlebox102_heading1 + p {
+  margin-bottom: 4px; }
+
 .articlebox103 .articlebox103_img-holder {
   margin-left: auto;
   margin-right: auto; }
 
-.btn1-01, .articlebox101, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102 article, .articlebox102 .articlebox102_img-holder, .articlebox103 header,
+.btn1-01, .articlebox101, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102, .articlebox102 article, .articlebox102 .articlebox102_img-holder, .articlebox103 header,
 .articlebox103 article, .articlebox103 .articlebox103_extras, .articlebox103 .articlebox103_img-holder, .articlebox104, .articlebox104 .articlebox104_img-holder, .articlebox105 .articlebox105_img-holder, .articlebox105 .articlebox105_extras {
   padding: 4px; }
 
-.articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_article-title,
-.articlebox102 .articlebox102_extras {
+.articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_extras {
   padding: 6px; }
 
-.articlebox101 .articlebox101_heading {
+.articlebox101 .articlebox101_heading, .articlebox102 .articlebox102_heading1,
+.articlebox102 .articlebox102_heading2, .articlebox102 .articlebox102_heading1 + p {
   padding-bottom: 4px; }
 
 .articlebox105 .articlebox105_img-holder > img {
@@ -863,9 +866,25 @@ input [type="button"],
     display: inline-block;
     margin: auto; } }
 
-.articlebox102 .articlebox102_extras button {
-  float: right;
-  margin-right: 6px; }
+.articlebox102 {
+  background-color: #2a2a2d;
+  color: #d5d5d5; }
+  .articlebox102 .articlebox102_heading1,
+  .articlebox102 .articlebox102_heading2 {
+    color: #fff; }
+  .articlebox102 .articlebox102_heading1 + p {
+    border-bottom: 1px dashed #5c5d60; }
+  .articlebox102 .articlebox102_extras {
+    background-color: #343437; }
+
+.articlebox102 .articlebox102_heading2 + p {
+  line-height: 110%; }
+
+.articlebox102 .articlebox102_extras {
+  width: 100%; }
+  .articlebox102 .articlebox102_extras button {
+    float: right;
+    margin-right: 6px; }
 
 .articlebox102 .articlebox102_img-holder {
   border: 1px solid #000;
