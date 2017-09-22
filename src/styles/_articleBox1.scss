@@ -23,7 +23,7 @@
 @include articlebox101_theme();
 
 .articlebox101 {
-  @extend %padd--4;
+  @extend %padd--4; // temp. use padding of parent container instead
 
   article {
     @extend %padd--4;
@@ -124,7 +124,7 @@
 @include articlebox102_theme();
 
 .articlebox102 {
-  @extend %padd--4;
+  @extend %padd--4; // temp. use padding of parent container instead
 
   article {
     @extend %padd--4;
@@ -213,19 +213,62 @@
 
 // articlebox103
 // ==================================================/
+@mixin articlebox103_theme() {
+  .articlebox103 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .articlebox103_heading1,
+    .articlebox103_heading2 {
+      color: #fff;
+    }
+
+    .articlebox103_heading1 + p {
+      border-bottom: 1px dashed #5c5d60;
+    }
+
+    .articlebox103_title-info {
+      background-color: #1c1d22;
+      // border: 1px solid #5c5d60;
+    }
+
+    .articlebox103_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include articlebox103_theme();
+
 .articlebox103 {
-  header,
+  @extend %padd--4; // temp. use padding of parent container instead
+
   article {
     @extend %padd--4;
   }
 
   li {
-    margin-bottom: 6px;
+    // margin-bottom: 6px;
+  }
+
+  .articlebox103_heading1,
+  .articlebox103_heading2 {
+    @extend %padd-bottom--4;
+  }
+
+  .articlebox103_heading1 + p {
+    @extend %padd-bottom--4;
+    @extend %margin-bottom--4;
+  }
+
+  .articlebox103_img-holder {
+    margin: 0 4px 0 4px; /* trbl */
   }
 
   .articlebox103_extras {
-    @extend %padd--4;
-
+    @extend %display--inline-block;
+    @extend %padd--6;
+    width: 100%;
+    
     button {
       float: right;
       margin-right: 4px;
@@ -259,9 +302,10 @@
   }
 
   .articlebox103_title-info {
-    border: 1px solid #000;
-    padding: 2px;
-    font-size: 14px;
+    @extend %padd--4;
+    @include font-size(14px);
+    @extend %margin-bottom--4;
+    
 
     li {
       float: left;
@@ -277,6 +321,10 @@
       p {
         margin-bottom: 10px;
       } 
+    }
+
+    .articlebox103_img-holder {
+      margin: auto;
     }
   }
 }
@@ -307,8 +355,43 @@
 
 // articlebox104
 // ==================================================/
+@mixin articlebox104_theme() {
+  .articlebox104 {
+    background-color: #141416;
+    color: #d5d5d5;
+
+    .articlebox104_heading {
+      color: #fff;
+    }
+
+    .articlebox104_heading + hr{
+      color: #5c5d60; /* old IE */
+      background-color: #5c5d60; /* Modern Browsers */
+    }
+
+    .articlebox104_img-holder {
+      border: 1px solid #000;
+      background-color: #666;
+    }
+  }
+}
+@include articlebox104_theme();
+
 .articlebox104 {
   @extend %padd--4;
+
+  .articlebox104_heading {
+    display: inline-block;
+  }
+
+  .articlebox104_heading + hr{
+    border: none;
+    height: 1px;
+  }
+
+  .articlebox104_heading + p {
+    @extend %padd--4;
+  }
 
   .articlebox104_img-holder {
     @extend %padd--4;
@@ -316,9 +399,7 @@
     width: 60px;
     height: 60px;
     margin-right: 6px;
-    border: 1px solid #000;
-    background-color: #666;
-
+    
     > img {
       height: 100%;
     }
