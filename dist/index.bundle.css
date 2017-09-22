@@ -807,24 +807,30 @@ input [type="button"],
     width: 8.33333333%; } }
 
 .articlebox101 .articlebox101_img-holder {
-  height: 100%;
-  background-color: #000;
-  max-width: 160px; }
+  height: 100%; }
 
 .articlebox101 .articlebox101_extras button {
   float: right;
   margin-right: 6px; }
 
 @media (min-width: 20em) {
-  .articlebox101_img-holder {
-    margin: auto; }
-  .articlebox101_extras p {
+  .articlebox101 .articlebox101_img-holder {
+    display: block;
+    width: 100%; }
+  .articlebox101 .articlebox101_extras p {
     margin-bottom: 10px; } }
 
 @media (min-width: 30em) {
-  .articlebox101_img-holder {
-    margin: auto; }
-  .articlebox101_extras p {
+  .articlebox101 .articlebox101_img-holder {
+    display: block;
+    width: 20%;
+    margin: auto;
+    float: left; }
+  .articlebox101 article {
+    display: block;
+    width: 80%;
+    float: left; }
+  .articlebox101 .articlebox101_extras p {
     display: inline-block;
     margin: auto; } }
 
@@ -841,15 +847,22 @@ input [type="button"],
   max-width: 160px; }
 
 @media (min-width: 20em) {
-  .articlebox102_img-holder {
+  .articlebox102 .articlebox102_img-holder {
     margin: auto; }
-  .articlebox102_extras p {
+  .articlebox102 .articlebox102_extras p {
     margin-bottom: 10px; } }
 
 @media (min-width: 30em) {
-  .articlebox102_img-holder {
-    margin: auto; }
-  .articlebox102_extras p {
+  .articlebox102 .articlebox102_img-holder {
+    display: block;
+    margin: auto;
+    width: 20%;
+    float: left; }
+  .articlebox102 article {
+    display: block;
+    width: 80%;
+    float: left; }
+  .articlebox102 .articlebox102_extras p {
     display: inline-block;
     margin: auto; } }
 
@@ -886,11 +899,19 @@ input [type="button"],
     margin: 4px; }
 
 @media (min-width: 20em) {
-  .articlebox103_extras p {
+  .articlebox103 .articlebox103_extras p {
     margin-bottom: 10px; } }
 
 @media (min-width: 30em) {
-  .articlebox103_extras p {
+  .articlebox103 .articlebox103_img-holder {
+    display: block;
+    width: 20%;
+    float: left; }
+  .articlebox103 article {
+    display: block;
+    width: 80%;
+    float: left; }
+  .articlebox103 .articlebox103_extras p {
     display: inline-block;
     margin-bottom: auto; } }
 
@@ -905,14 +926,16 @@ input [type="button"],
     height: 100%; }
 
 @media (min-width: 20em) {
-  .articlebox104_img-holder {
+  .articlebox104 .articlebox104_img-holder {
     float: none;
     clear: right;
     margin-right: auto;
-    margin-left: auto; } }
+    margin-left: auto; }
+  .articlebox104 article {
+    float: none; } }
 
 @media (min-width: 30em) {
-  .articlebox104_img-holder {
+  .articlebox104 .articlebox104_img-holder {
     float: left;
     margin-right: 6px; } }
 

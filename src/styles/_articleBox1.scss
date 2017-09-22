@@ -8,8 +8,7 @@
   .articlebox101_img-holder {
     @extend %padd--4;
     height: 100%;
-    background-color: #000;
-    max-width: 160px;
+    
   }
 
   .articlebox101_extras {
@@ -28,27 +27,41 @@
 
 // mobile portrait (320x480) 
 @include mq($from: mobile) {
-  .articlebox101_img-holder {
-    margin: auto;
-  }
+  .articlebox101 {
+    .articlebox101_img-holder {
+      display: block;
+      width: 100%;
+    }
 
-  .articlebox101_extras {
-    p {
-      margin-bottom: 10px;
+    .articlebox101_extras {
+      p {
+        margin-bottom: 10px;
+      }
     }
   }
 }
 
 // mobile landscape (480x320)
 @include mq($from: mobileLandscape) {
-  .articlebox101_img-holder {
-    margin: auto;
-  }
-
-  .articlebox101_extras {
-    p {
-      display: inline-block;
+  .articlebox101 {
+    .articlebox101_img-holder {
+      display: block;
+      width: 20%;
       margin: auto;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .articlebox101_extras {
+      p {
+        display: inline-block;
+        margin: auto;
+      }
     }
   }
 }
@@ -89,28 +102,41 @@
 
 // mobile portrait (320x480) 
 @include mq($from: mobile) {
-  .articlebox102_img-holder {
-    margin: auto;
-  }
+  .articlebox102 {
+    .articlebox102_img-holder {
+      margin: auto;
+    }
 
-  .articlebox102_extras {
-    p {
-      // display: block;
-      margin-bottom: 10px;
+    .articlebox102_extras {
+      p {
+        // display: block;
+        margin-bottom: 10px;
+      }
     }
   }
 }
 
 // mobile landscape (480x320)
 @include mq($from: mobileLandscape) {
-  .articlebox102_img-holder {
-    margin: auto;
-  }
-
-  .articlebox102_extras {
-    p {
-      display: inline-block;
+  .articlebox102 {
+    .articlebox102_img-holder {
+      display: block;
       margin: auto;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .articlebox102_extras {
+      p {
+        display: inline-block;
+        margin: auto;
+      }
     }
   }
 }
@@ -176,20 +202,36 @@
 
 // mobile portrait (320x480) 
 @include mq($from: mobile) {
-  .articlebox103_extras {
-    p {
-      margin-bottom: 10px;
-    } 
+  .articlebox103 {
+    .articlebox103_extras {
+      p {
+        margin-bottom: 10px;
+      } 
+    }
   }
 }
 
 // *mobile landscape (480x320)
 @include mq($from: mobileLandscape) {
-  .articlebox103_extras {
-    p {
-      display: inline-block;
-      margin-bottom: auto;
-    } 
+  .articlebox103 {
+    .articlebox103_img-holder {
+      display: block;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .articlebox103_extras {
+      p {
+        display: inline-block;
+        margin-bottom: auto;
+      }  
+    }
   }
 }
 
@@ -215,19 +257,27 @@
 
 // mobile portrait (320x480)
 @include mq($from: mobile) {
-  .articlebox104_img-holder {
-    float: none;
-    clear: right;
-    margin-right: auto;
-    margin-left: auto;
+  .articlebox104 {
+    .articlebox104_img-holder {
+      float: none;
+      clear: right;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    article {
+      float: none;
+    }
   }
 }
 
 // mobile landscape (480x320)
 @include mq($from: mobileLandscape) {
-  .articlebox104_img-holder {
-    float: left;
-    margin-right: 6px;
+  .articlebox104 {
+    .articlebox104_img-holder {
+      float: left;
+      margin-right: 6px;
+    }
   }
 }
 
