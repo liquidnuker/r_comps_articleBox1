@@ -1,8 +1,40 @@
 // articlebox101
 // ==================================================/
+@mixin articlebox101_theme() {
+  .articlebox101 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
+    .articlebox101_heading {
+      background-color: #2c2d32;
+      color: #fff;
+      border-bottom: 1px dashed #5c5d60;
+    }
+
+    .articlebox101_img-holder {
+      border: 1px solid #5c5d60;
+    }
+
+    .articlebox101_extras {
+      background-color: #343437;
+    }
+  }
+}
+@include articlebox101_theme();
+
 .articlebox101 {
+  @extend %padd--4;
   article {
     @extend %padd--4;
+
+    p {
+      @extend %margin-top--4;
+      line-height: 110%; /* most browsers is about 110% to 120% */
+    }
+  }
+
+  .articlebox101_heading {
+    @extend %padd-bottom--4;
   }
 
   .articlebox101_img-holder {
@@ -12,7 +44,10 @@
   }
 
   .articlebox101_extras {
+    @extend %display--inline-block;
     @extend %padd--6;
+    width: 100%;
+
 
     // p {
     //   set on mq below
@@ -29,7 +64,6 @@
 @include mq($from: mobile) {
   .articlebox101 {
     .articlebox101_img-holder {
-      display: block;
       width: 100%;
     }
 
@@ -47,7 +81,6 @@
     .articlebox101_img-holder {
       display: block;
       width: 20%;
-      margin: auto;
       float: left;
     }
 
@@ -74,7 +107,7 @@
   }
 
   .articlebox102_article-title {
-    position: relative;
+    @extend %pos--relative;
   }
 
   .articlebox102_article-title,
@@ -94,7 +127,7 @@
   }
 
   .articlebox102_img-holder {
-    padding: 4px;
+    @extend %padd--4;
     border: 1px solid #000;
     max-width: 160px;
   }
@@ -167,11 +200,11 @@
   }
 
   .articlebox103_img-holder {
+    @extend %margin--auto;
     @extend %padd--4;
     background-color: #000;
     max-width: 160px;
-    margin:auto;
-
+    
     > img {
       margin-bottom: -2px;
     }

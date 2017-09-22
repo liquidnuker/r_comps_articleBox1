@@ -6,7 +6,10 @@
   .row:after {
     clear: both; }
 
-.btn {
+.articlebox102 .articlebox102_article-title {
+  position: relative; }
+
+.btn, .articlebox101 .articlebox101_extras {
   display: inline-block; }
 
 input, textarea, select, html, body, div, span, applet, object, iframe,
@@ -28,13 +31,23 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.btn1-01, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102 article, .articlebox103 header,
+.articlebox101 article p {
+  margin-top: 4px; }
+
+.articlebox103 .articlebox103_img-holder {
+  margin-left: auto;
+  margin-right: auto; }
+
+.btn1-01, .articlebox101, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102 article, .articlebox102 .articlebox102_img-holder, .articlebox103 header,
 .articlebox103 article, .articlebox103 .articlebox103_extras, .articlebox103 .articlebox103_img-holder, .articlebox104, .articlebox104 .articlebox104_img-holder, .articlebox105 .articlebox105_img-holder, .articlebox105 .articlebox105_extras {
   padding: 4px; }
 
 .articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_article-title,
 .articlebox102 .articlebox102_extras {
   padding: 6px; }
+
+.articlebox101 .articlebox101_heading {
+  padding-bottom: 4px; }
 
 .articlebox105 .articlebox105_img-holder > img {
   display: block;
@@ -806,16 +819,33 @@ input [type="button"],
   .col-lg-1 {
     width: 8.33333333%; } }
 
+.articlebox101 {
+  background-color: #2a2a2d;
+  color: #d5d5d5; }
+  .articlebox101 .articlebox101_heading {
+    background-color: #2c2d32;
+    color: #fff;
+    border-bottom: 1px dashed #5c5d60; }
+  .articlebox101 .articlebox101_img-holder {
+    border: 1px solid #5c5d60; }
+  .articlebox101 .articlebox101_extras {
+    background-color: #343437; }
+
+.articlebox101 article p {
+  line-height: 110%;
+  /* most browsers is about 110% to 120% */ }
+
 .articlebox101 .articlebox101_img-holder {
   height: 100%; }
 
-.articlebox101 .articlebox101_extras button {
-  float: right;
-  margin-right: 6px; }
+.articlebox101 .articlebox101_extras {
+  width: 100%; }
+  .articlebox101 .articlebox101_extras button {
+    float: right;
+    margin-right: 6px; }
 
 @media (min-width: 20em) {
   .articlebox101 .articlebox101_img-holder {
-    display: block;
     width: 100%; }
   .articlebox101 .articlebox101_extras p {
     margin-bottom: 10px; } }
@@ -824,7 +854,6 @@ input [type="button"],
   .articlebox101 .articlebox101_img-holder {
     display: block;
     width: 20%;
-    margin: auto;
     float: left; }
   .articlebox101 article {
     display: block;
@@ -834,15 +863,11 @@ input [type="button"],
     display: inline-block;
     margin: auto; } }
 
-.articlebox102 .articlebox102_article-title {
-  position: relative; }
-
 .articlebox102 .articlebox102_extras button {
   float: right;
   margin-right: 6px; }
 
 .articlebox102 .articlebox102_img-holder {
-  padding: 4px;
   border: 1px solid #000;
   max-width: 160px; }
 
@@ -875,8 +900,7 @@ input [type="button"],
 
 .articlebox103 .articlebox103_img-holder {
   background-color: #000;
-  max-width: 160px;
-  margin: auto; }
+  max-width: 160px; }
   .articlebox103 .articlebox103_img-holder > img {
     margin-bottom: -2px; }
 
