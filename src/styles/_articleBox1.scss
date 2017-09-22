@@ -435,6 +435,8 @@
 // articlebox105
 // ==================================================/
 .articlebox105 {
+  @extend %padd--4;
+  
   .articlebox105_img-holder {
   @extend %padd--4;
   border: 1px solid #000;

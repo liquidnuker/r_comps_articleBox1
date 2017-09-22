@@ -41,7 +41,7 @@ input [type="button"],
   margin-left: auto;
   margin-right: auto; }
 
-.btn1-01, .articlebox101, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102, .articlebox102 article, .articlebox102 .articlebox102_img-holder, .articlebox103, .articlebox103 article, .articlebox103 .articlebox103_img-holder, .articlebox103 .articlebox103_title-info, .articlebox104, .articlebox104 .articlebox104_heading + p, .articlebox104 .articlebox104_img-holder, .articlebox105 .articlebox105_img-holder, .articlebox105 .articlebox105_extras {
+.btn1-01, .articlebox101, .articlebox101 article, .articlebox101 .articlebox101_img-holder, .articlebox102, .articlebox102 article, .articlebox102 .articlebox102_img-holder, .articlebox103, .articlebox103 article, .articlebox103 .articlebox103_img-holder, .articlebox103 .articlebox103_title-info, .articlebox104, .articlebox104 .articlebox104_heading + p, .articlebox104 .articlebox104_img-holder, .articlebox105, .articlebox105 .articlebox105_img-holder, .articlebox105 .articlebox105_extras {
   padding: 4px; }
 
 .articlebox101 .articlebox101_extras, .articlebox102 .articlebox102_extras, .articlebox103 .articlebox103_extras {
