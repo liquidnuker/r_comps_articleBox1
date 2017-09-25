@@ -538,7 +538,8 @@ input [type="button"],
   line-height: 1.15; }
 
 .btn1-01 {
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  cursor: pointer; }
 
 .container-fluid {
   padding-left: 0;
