@@ -22,6 +22,46 @@
 }
 @include articlebox101_theme();
 
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .articlebox101 {
+    .articlebox101_img-holder {
+      width: 100%;
+    }
+
+    .articlebox101_extras {
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox101 {
+    .articlebox101_img-holder {
+      display: block;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .articlebox101_extras {
+      p {
+        display: inline-block;
+        margin: auto;
+      }
+    }
+  }
+}
+// end breakpoints
+
 .articlebox101 {
   @extend %padd--4; // temp. use padding of parent container instead
 
@@ -61,45 +101,6 @@
   }
 } 
 
-// mobile portrait (320x480) 
-@include mq($from: mobile) {
-  .articlebox101 {
-    .articlebox101_img-holder {
-      width: 100%;
-    }
-
-    .articlebox101_extras {
-      p {
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
-
-// mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .articlebox101 {
-    .articlebox101_img-holder {
-      display: block;
-      width: 20%;
-      float: left;
-    }
-
-    article {
-      display: block;
-      width: 80%;
-      float: left;
-    }
-
-    .articlebox101_extras {
-      p {
-        display: inline-block;
-        margin: auto;
-      }
-    }
-  }
-}
-
 // articlebox102
 // ==================================================/
 @mixin articlebox102_theme() {
@@ -122,6 +123,48 @@
   }
 }
 @include articlebox102_theme();
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .articlebox102 {
+    .articlebox102_img-holder {
+      margin: auto;
+    }
+
+    .articlebox102_extras {
+      p {
+        // display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox102 {
+    .articlebox102_img-holder {
+      display: block;
+      margin: auto;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .articlebox102_extras {
+      p {
+        display: inline-block;
+        margin: auto;
+      }
+    }
+  }
+}
+// end breakpoints
 
 .articlebox102 {
   @extend %padd--4; // temp. use padding of parent container instead
@@ -170,47 +213,6 @@
   }
 }
 
-// mobile portrait (320x480) 
-@include mq($from: mobile) {
-  .articlebox102 {
-    .articlebox102_img-holder {
-      margin: auto;
-    }
-
-    .articlebox102_extras {
-      p {
-        // display: block;
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
-
-// mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .articlebox102 {
-    .articlebox102_img-holder {
-      display: block;
-      margin: auto;
-      width: 20%;
-      float: left;
-    }
-
-    article {
-      display: block;
-      width: 80%;
-      float: left;
-    }
-
-    .articlebox102_extras {
-      p {
-        display: inline-block;
-        margin: auto;
-      }
-    }
-  }
-}
-
 // articlebox103
 // ==================================================/
 @mixin articlebox103_theme() {
@@ -238,6 +240,46 @@
   }
 }
 @include articlebox103_theme();
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .articlebox103 {
+    .articlebox103_extras {
+      p {
+        margin-bottom: 10px;
+      } 
+    }
+
+    .articlebox103_img-holder {
+      margin: auto;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox103 {
+    .articlebox103_img-holder {
+      display: block;
+      width: 20%;
+      float: left;
+    }
+
+    article {
+      display: block;
+      width: 80%;
+      float: left;
+    }
+
+    .articlebox103_extras {
+      p {
+        display: inline-block;
+        margin-bottom: auto;
+      }  
+    }
+  }
+}
+// end breakpoints
 
 .articlebox103 {
   @extend %padd--4; // temp. use padding of parent container instead
@@ -318,45 +360,6 @@
   }
 }
 
-// mobile portrait (320x480) 
-@include mq($from: mobile) {
-  .articlebox103 {
-    .articlebox103_extras {
-      p {
-        margin-bottom: 10px;
-      } 
-    }
-
-    .articlebox103_img-holder {
-      margin: auto;
-    }
-  }
-}
-
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .articlebox103 {
-    .articlebox103_img-holder {
-      display: block;
-      width: 20%;
-      float: left;
-    }
-
-    article {
-      display: block;
-      width: 80%;
-      float: left;
-    }
-
-    .articlebox103_extras {
-      p {
-        display: inline-block;
-        margin-bottom: auto;
-      }  
-    }
-  }
-}
-
 // articlebox104
 // ==================================================/
 @mixin articlebox104_theme() {
@@ -380,6 +383,33 @@
   }
 }
 @include articlebox104_theme();
+
+// mobile portrait (320x480)
+@include mq($from: mobile) {
+  .articlebox104 {
+    .articlebox104_img-holder {
+      float: none;
+      clear: right;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    article {
+      float: none;
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox104 {
+    .articlebox104_img-holder {
+      float: left;
+      margin-right: 6px;
+    }
+  }
+}
+// end breakpoints
 
 .articlebox104 {
   @extend %padd--4;
@@ -409,32 +439,6 @@
     
     > img {
       height: 100%;
-    }
-  }
-}
-
-// mobile portrait (320x480)
-@include mq($from: mobile) {
-  .articlebox104 {
-    .articlebox104_img-holder {
-      float: none;
-      clear: right;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    article {
-      float: none;
-    }
-  }
-}
-
-// mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .articlebox104 {
-    .articlebox104_img-holder {
-      float: left;
-      margin-right: 6px;
     }
   }
 }
@@ -470,6 +474,44 @@
   }
 }
 @include articlebox105_theme();
+
+// mobile portrait (320x480)
+@include mq($from: mobile) {
+  .articlebox105 {
+    > .articlebox105_img-holder {
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 6px;
+      width: 100%;
+    }
+  }
+}
+
+// mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .articlebox105 {
+    > .articlebox105_img-holder {
+      float: left;
+      margin-right: 1%;
+      margin-bottom: auto;
+      width: 40%;
+      max-width: 256px;
+    }
+  }
+}
+
+// wide 1200px
+@include mq($from: wide) {
+  .articlebox105 {
+    > .articlebox105_img-holder {
+      float: left;
+      margin-right: 1%;
+      width: 40%;
+    }
+  }  
+}
+// end breakpoints
 
 .articlebox105 {
   @extend %padd--4;
@@ -514,43 +556,4 @@
     @extend %padd--4;
     @extend %margin-top--4;  
   }
-}
-
-// articlebox105 media queries (_mq.scss)
-// ==================================================/
-// mobile portrait (320x480)
-@include mq($from: mobile) {
-  .articlebox105 {
-    > .articlebox105_img-holder {
-      float: none;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 6px;
-      width: 100%;
-    }
-  }
-}
-
-// mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .articlebox105 {
-    > .articlebox105_img-holder {
-      float: left;
-      margin-right: 1%;
-      margin-bottom: auto;
-      width: 40%;
-      max-width: 256px;
-    }
-  }
-}
-
-// wide 1200px
-@include mq($from: wide) {
-  .articlebox105 {
-    > .articlebox105_img-holder {
-      float: left;
-      margin-right: 1%;
-      width: 40%;
-    }
-  }  
 }
